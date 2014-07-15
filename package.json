@@ -1,0 +1,36 @@
+{
+  "name": "mongo-admin",
+  "version": "0.0.0",
+  "description": "an admin tool for mongodb based on mongoose",
+  "main": "index.js",
+  "dependencies": {
+    "errorhandler": "~1.1.1",
+    "express": "~4.6.1",
+    "method-override": "~2.1.1",
+    "express-session": "~1.6.5",
+    "mongoose": "~3.8.13",
+    "morgan": "~1.1.1",
+    "multer": "~0.1.2",
+    "nunjucks": "~1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shen2/mongo-admin.git"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "admin",
+    "panel",
+    "phpmyadmin"
+  ],
+  "author": "shen2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shen2/mongo-admin/issues"
+  }
+}

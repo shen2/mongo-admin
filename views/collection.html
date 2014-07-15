@@ -1,0 +1,28 @@
+{%block title %}管理后台{% endblock %}
+<div class="row">
+<main class="col-xs-12 col-md-9">
+	<div style="margin-bottom:10px;">
+		<button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalNewThread">插入新记录</button>
+	</div>
+	
+	<table class="table card">
+	<thead>
+		<tr>
+		{% for col in cols %}
+			<th>{% col.path %}</th>
+		{% endfor %}
+		</tr>
+	</thead>
+	<tbody>
+		{% for row in rowList %}
+		<tr>
+		{{#each cols}}
+			<td class="col-{{type}} col-{{key}}">{{val}}</td>
+		{{/each}}
+		</tr>
+		{%endfor%}
+	</tbody>
+	</table>
+	<div class="pagebar">{{pager}}</div>
+</main>
+</div>

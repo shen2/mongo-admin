@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+{%block title%}创建新记录{%endblock%}
+<div class="row">
+<main class="col-xs-12 col-md-9">
+	<form class="form-horizontal">
+	{{#each cols}}
+	<div class="form-group">
+		<label class="col-md-3">{{key}}</label>
+		<div class="col-md-9">
+			<input type="text" class="form-control" value="{{val}}" />
+		</div>
+	</div>
+	{{/each}}
+	<div class="form-group">
+		<div class="col-md-offset-3 col-md-9">
+			<button type="submit" class="btn btn-primary">保存</button>
+		</div>
+	</div>
+	</form>
+</main>
+</div>
